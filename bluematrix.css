@@ -1,0 +1,142 @@
+@keyframes glow {
+   from {
+     box-shadow: 0 0 5px #024eab;
+  }
+   to {
+     box-shadow: none;
+  }
+}
+ :root {
+   --notification-sfx: /media/beep.mp3;
+}
+body {
+  font-family: monospace;
+}
+ .allMessages {
+   color: #372af5;
+   text-shadow: 1px 1px 3px #024eab;
+   border-radius: 10px;
+   font-family: monospace;
+   letter-spacing: -1px;
+}
+ .sent {
+}
+ .recieved {
+}
+.senderInfo {
+  color: #ffffff;
+  text-shadow: 0 0 3px #043f87;
+}
+ #background {
+   background-color: #000;
+   scrollbar-color: ##0b00aa #000;
+   scrollbar-width: thin;
+}
+ #input {
+   color: #0a74f5;
+   background: #000;
+   border: none;
+   outline: none;
+   font-family: monospace;
+}
+ #input:empty:before {
+   color: #050;
+}
+ #timestamp {
+   color: #0a74f5;
+   font-style: italic;
+   font-family: monospace;
+   font-size: 9pt;
+   text-align: left !important;
+   width: calc(100% - 20px);
+   padding: 0 10px 0 10px;
+   text-shadow: 1px 1px 3px #0F0;
+}
+ #top_banner {
+   font-family: monospace;
+   color: #000000;
+   background-color: #000000;
+}
+ blockquote {
+   background-color: #222;
+   border-color: #0F0;
+}
+ #loadMore {
+   color: #0b6ee6;
+   font-family: monospace;
+   font-size: 10pt;
+}
+ #loadMore:hover {
+   text-decoration: underline;
+   text-decoration-style: dotted;
+   text-decoration-color: #0b6ee6;
+}
+ .pinned {
+   animation: 500ms linear infinite alternate glow;
+}
+.pinned:after {
+  display: none;
+}
+.mod, .owner, .tester {
+  width: 0;
+  font-size: 8pt;
+  text-shadow: none;
+}
+.mod::before {
+  content: "[MOD]";
+  display: inline-block;
+  color: #0b6ee6;
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  text-shadow: 0 0 3px #F00;
+}
+.owner::before {
+  content: "[OWNER]";
+  display: inline-block;
+  color: #0b6ee6;
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  text-shadow: 0 0 3px #F00;
+}
+.beta::before {
+  content: "[BETA TESTER]";
+  display: inline-block;
+  color: #0b6ee6;
+  position: absolute;
+  top: 7px;
+  right: 7px;
+}
+#settings {
+  background-image: none;
+}
+#settings:after {
+  position: absolute;
+  right: 0;
+  top: 0;
+  content: "#";
+  color: #0b6ee6;
+}
+#settings:hover:after {
+  font-weight: bold;
+}
+#replyBanner {
+  color: #0F0;
+  font-family: monospace;
+  font-size: 8pt;
+  text-shadow: 0 0 3px #0b6ee6;
+}
+.msgBody a {
+  color: #52a0ff !important;
+}
+#emojiTrayToggle {
+  -webkit-filter: drop-shadow(1px 1px 1px #0F0), drop-shadow(-1px -1px 1px #0F0);
+  filter: drop-shadow(1px 1px 1px #0F0), drop-shadow(-1px -1px 1px #0F0);
+  box-shadow: 1px 1px 1px #0F0, -1px -1px 1px #0F0;
+}
+#emojiTray {
+  background-color: #000;
+  color: #024eab;
+  border-color: #024eab;
+}
