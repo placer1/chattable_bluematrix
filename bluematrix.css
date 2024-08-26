@@ -40,7 +40,7 @@ body {
    font-family: monospace;
 }
  #input:empty:before {
-   color: #050;
+   color: #103b70;
 }
  #timestamp {
    color: #0a74f5;
@@ -131,9 +131,9 @@ body {
   color: #52a0ff !important;
 }
 #emojiTrayToggle {
-  -webkit-filter: drop-shadow(1px 1px 1px #0F0), drop-shadow(-1px -1px 1px #0F0);
-  filter: drop-shadow(1px 1px 1px #0F0), drop-shadow(-1px -1px 1px #0F0);
-  box-shadow: 1px 1px 1px #0F0, -1px -1px 1px #0F0;
+  -webkit-filter: drop-shadow(1px 1px 1px #0F0), drop-shadow(-1px -1px 1px #103b70);
+  filter: drop-shadow(1px 1px 1px #0F0), drop-shadow(-1px -1px 1px #103b70);
+  box-shadow: 1px 1px 1px #103b70, -1px -1px 1px #103b70;
 }
 #emojiTray {
   background-color: #000;
